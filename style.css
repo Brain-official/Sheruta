@@ -1,5 +1,10 @@
 
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .navbar {
     background: transparent;
 }
@@ -75,9 +80,6 @@ span {
 } 
 
 @media (max-width: 800px) {
-    .options {
-        display: none;
-    }
 
     .heading {
         margin-right: 40px;
@@ -86,8 +88,27 @@ span {
 
 }
 
+@media (max-width: 1220px) {
+    .options {
+        display: none;
+    }
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
 
 
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
 
 
 
@@ -134,24 +155,49 @@ span {
 }
 
 
+@media(max-width: 1086px) {
 
-
-
-
-@media (max-width: 800px) {
     .houses {
         position: relative;
-        left: 30px;
+        top: 15px;
     }
+   
+}
 
-    .article {
-        position: relative;
-        top: 50px;
-        padding: 0;
-        text-align: center;
-        margin-right: 110px;
+@media(max-width: 500px) {
+    .imgs img {
+        width: 300px;
     }
 }
+
+
+@media (max-width: 980px) {
+
+    .article {
+        text-align: center;
+        left: 0;     
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -173,64 +219,57 @@ span {
     position: relative;
 }
 
-
-.works-heading h1{
-    position: absolute;
-    left: 420px;
-    top: 30px;
-    color: #00BA74;
-}
-
-
-.works-heading  p {
-    position: absolute;
-    left: 380px;
-    top: 84px;
-}
-
-
-.cta {
-    height: 440px;
-    background-color: 	gainsboro;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-    position: relative;
-}
-
-.cta-article {
-    position: relative;
-    top: 90px;
+.head {
     text-align: center;
+    position: relative;
+    top: 70px;
 }
 
-
-h4 {
-    font-size: large;
+.hiw {
+    padding: 5%;
+    text-align: center;
+    background-color: gainsboro;
+    height: 450px;
+    border-radius: 40px;
+    margin: 0 1% 3%;
 }
 
-
-.cta-article p{
-    font-size: 15px;
+.circle-text {
+    position: relative;
+    top: 110px;
+  
 }
 
-
-
-.cta-article h4, .cta-article p {
-    margin-right: 32px;
-}
-
-.circle-div {
-    height: 100px;
+.circle-1, .circle-2, .circle-3 {
     width: 100px;
-    position: absolute;
+    height: 100px;
     border-radius: 50%;
-    top: 90px;
+    margin-left: 130px;
+    margin-top: 30px;
 }
 
+.circle-1 {
+    background-color: #00BA74;
+    box-shadow: 32px 21px 53px 6px rgba(0,186,116,0.45);
+    -webkit-box-shadow: 32px 21px 53px 6px rgba(0,186,116,0.45);
+    -moz-box-shadow: 32px 21px 53px 6px rgba(0,186,116,0.45);
+}
 
-.circle {
+.circle-2 {
+    background-color: #FFAC0C;
+    box-shadow: 32px 19px 53px 6px rgba(255,172,12,0.45);
+    -webkit-box-shadow: 32px 19px 53px 6px rgba(255,172,12,0.45);
+    -moz-box-shadow: 32px 19px 53px 6px rgba(255,172,12,0.45);
+}
+
+.circle-3 {
+    background-color: #252B41;
+    box-shadow: 32px 19px 53px 6px rgba(37,43,65,0.45);
+    -webkit-box-shadow: 32px 19px 53px 6px rgba(37,43,65,0.45);
+    -moz-box-shadow: 32px 19px 53px 6px rgba(37,43,65,0.45);
+}
+
+.white-circle {
     height: 80px;
     width: 80px;
     border: 1px solid #fff;
@@ -240,10 +279,11 @@ h4 {
     top: 10px;
 }
 
+
 .fa-user, .fa-search, .fa-paper-plane {
     position: relative;
     top: 26px;
-    left: 2px;
+    right: 13px;
     color: #fff;
 }
 
@@ -254,8 +294,8 @@ h4 {
     background-color: #fff;
     position: relative;
     border-radius: 4px;
-    bottom: 60px;
-    left: 150px;
+    top: 60px;
+    left: 200px;
     text-align: center;
     z-index: 2;
 }
@@ -263,119 +303,31 @@ h4 {
 
 
 
-.green {
-    color: #00BA74;
-}
 
-
-
-.yellow {
-    color: #FFAC0C;
-}
-
-.maroon {
-    color: #252B41;
-}
-
-
-
-
-
-.create {
-    background-color: #00BA74;
-    left: 150px;
-    box-shadow: 32px 21px 53px 6px rgba(0,186,116,0.45);
-    -webkit-box-shadow: 32px 21px 53px 6px rgba(0,186,116,0.45);
-    -moz-box-shadow: 32px 21px 53px 6px rgba(0,186,116,0.45);
-}
-
-.find {
-    background-color: #FFAC0C;
-    left: 460px;
-    box-shadow: 32px 19px 53px 6px rgba(255,172,12,0.45);
-    -webkit-box-shadow: 32px 19px 53px 6px rgba(255,172,12,0.45);
-    -moz-box-shadow: 32px 19px 53px 6px rgba(255,172,12,0.45);
-}
-
-.book {
-    background-color: #252B41;
-    right: 120px;
-    box-shadow: 32px 19px 53px 6px rgba(37,43,65,0.45);
-    -webkit-box-shadow: 32px 19px 53px 6px rgba(37,43,65,0.45);
-    -moz-box-shadow: 32px 19px 53px 6px rgba(37,43,65,0.45);
-}
-
-
-@media (max-width: 800px) {
-
-    .how-it-works{
-        padding-top: 25%;
-        text-align: center;
+@media(max-width: 990px) {
+    .hiw {
+        height: 1140px;
+        margin-bottom: 0;
     }
 
-
-    .works-heading h1 {
+    .circle-1, .circle-2, .circle-3 {
         position: relative;
-        left: 20px;
-        margin-bottom: 160px;
+        left: 30px;
     }
 
-    .works-heading  p {
+    .num {
+        position: relative;
+        left: 221px;
+    }
+
+}
+
+
+@media (max-width: 544px) and (min-width: 767px) {
+    .tre {
         position: absolute;
-        left: 88px;
-        top: 134px;
+        left: 210px;
     }
-
- 
-    .div {
-        margin-top: 30px;
-    }
-
-    .cta {
-        height: 890px;
-        margin-bottom: 120px;
-        padding-bottom: 50px;
-    }
-
-    .find {
-        position: relative;
-        left: 150px;
-        top: 30px;
-    }
-
-    .book {
-        position: relative;
-        top: 30px;
-        left: 150px;
-    }
-
-    .create {
-        position: relative;
-        top: 20px;
-    }
-
-    .cta-article {
-        margin-bottom: 30px;
-    }
-
-    .green {
-        position: relative;
-        top: 30px;
-        left: 220px;
-    }
-
-    .yellow {
-        position: relative;
-        top: 40px;
-        left: 220px;
-    }
-
-    .maroon {
-        position: relative;
-        top: 40px;
-        left: 220px;
-    }
-
 }
 
 
@@ -391,87 +343,87 @@ h4 {
 
 
 
-/* location section */
 
 
 
-.location .property{
-    padding: 14% 5%;
+
+/* location section *************************/
+
+
+
+.location{
+    padding: 15% 4%;
 }
 
-.location-heading{
-    text-align: center;
-}
-
-.location-heading h1 {
-    color: #00BA74;
-}
-
-.locations {
-    display: flex;
-    flex-wrap: wrap;
+.props {
+    margin-top: 90px;
 }
 
 
-.locale {
-    position: relative;
-    margin-top: 0;
-}
-
-.Ikoyi {
+.img-1 {
     background-image: url(Images/Mask\ Group.png);
     background-repeat: no-repeat;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
+    margin-left: 40px;
 }
 
 
-.Lagos-island {
+.img-2 {
     background-image: url(Images/Mask\ Group\ \(1\).png);
     background-repeat: no-repeat;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     margin-left: 50px;
 }
 
 
-.Surulere {
+.img-3 {
     background-image: url(Images/Mask\ Group\ \(2\).png);
     background-repeat: no-repeat;
     width: 500px;
     height: 500px;
+    margin-left: 40px;
+    position: relative;
+    bottom: 130px;
 } 
 
-
-.locale p{
-    position: absolute;
+.props div p {
+    color: #fff;
+    position: relative;
     top: 230px;
-    left: 20px;
-    color: #fff;
-}
-
-.locale h3 {
-    position: absolute;
-    top: 190px;
-    color: #fff;
-    left: 20px;
 }
 
 
 
 
-/* .Lagos-island img {
-    height: 270px;
-    width: 450px;
-} */
 
-
-
-@media (max-width: 800px) {
-    .Lagos-island {
-       margin-left: 0;
+@media (max-width: 880px) {
+    .img-1, .img-2, .img-3 {
+        width: 80%;
     }
+
+    .img-2 {
+        position: relative;
+        bottom: 165px;
+        right: 10px;
+    }
+   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -489,94 +441,124 @@ h4 {
 
 
 
+
 .property  .container {
     padding: 9% 5%;
     position: relative;
     margin-top: 222px;
     background-color: gainsboro;
+    height: 1130px;
 }
 
-.properties {
-    display: flex;
-}
-
-.property-head {
-    text-align: center;
+.prop {
+    margin-top: 250px;
 }
 
 
-.property-head h1 {
-    color: #00BA74;
+.image-1 {
+    background-image: url(Images/Rectangle\ 17.png);
 }
+
+.image-2 {
+    background-image: url(Images/Rectangle\ 19.png);
  
-
-.prop-division {
-    margin-left: 55px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
-
 }
 
-.prop-division img {
-    width: 280px;
+.image-3 {
+    background-image: url(Images/Rectangle\ 21.png);
+   
+}
+
+.image-1, .image-2, .image-3 {
+    height: 300px;
+    width: 100%;
 }
 
 
-.prop-division div {
+.img-text {
     background-color: #fff;
-    height: 200px;
-    position: relative;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    padding: 16px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 
-.prop-division div span {
-    position: absolute;
-    right: 58px;
-    top: 12px;
-    background-color: #fff;
-}
-
-
-.prop-division div h4, .prop-division div p {
-    position: relative;
-    top: 14px;
-    left: 8px;
-}
-
-
-
-.prop-division div h4, .prop-division div span {
+.img-text h3 {
+    font-size: 1.2rem;
     color: #00BA74;
 }
 
 
-.prop-division div button {
+.img-text p {
     position: relative;
-    top: 57px;
-    left: 12px;
+    bottom: 25px;
 }
 
+.image-1 span, .image-2 span, .image-3 span {
+    position: relative;
+    left: 205px;
+    top: 180px;
+    background-color: #252B41;
+    color: #fff;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+.amt {
+    position: relative;
+    color: #00BA74;
+    left: 186px;
+    bottom: 30px;
+    background-color: #fff;
+}
+
+
+.solid-btn {
+    background-color: #00BA74;
+    border-color: #00BA74;
+}
+
+
+
+
+.light-btn {
+    background-color: #92e3a9;
+    border-color: #92e3a9;
+    color: #00BA74;
+}
+
+
+
+
+.header-text {
+    color: #00BA74;
+}
 
 
 
 @media (max-width: 800px) {
-    .properties {
-        display: flex;
-        flex-direction: column;
+    .property .container {
+        height: 1800px;
     }
 
-    .prop-division div {
-        width: 280px;
+    .img-text {
+        width: 319px;
     }
 
-    .prop-division  {
-        width: 280px;
-        margin-top: 30px;
+    .prop {
+        position: relative;
+        bottom: 90px;
+        left: 50px;
     }
 
+    .prop-sec {
+        margin-top: 24px;
+    }
+
+    .image-1, .image-2, .image-3 {
+        height: 300px;
+        width: 73%;
+    }
 
 }
 
